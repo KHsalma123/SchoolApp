@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0F1117</color>
+    <color name="surface">#1A1D2E</color>
+    <color name="surface_alt">#20243A</color>
+    <color name="divider">#2A2D45</color>
+    <color name="border">#32365A</color>
+    <color name="text_primary">#E8EAF6</color>
+    <color name="text_secondary">#9094B8</color>
+    <color name="text_tertiary">#5A5F80</color>
+    <color name="primary_ultra_light">#1E2260</color>
+    <color name="success_light">#0D2A20</color>
+    <color name="warning_light">#2A2000</color>
+    <color name="danger_light">#2A0A10</color>
+    <color name="info_light">#0A1A30</color>
+    <color name="accent_light">#2A1A10</color>
+</resources>

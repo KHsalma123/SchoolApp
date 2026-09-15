@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Accueil" />
+    <item android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="Emploi" />
+    <item android:id="@+id/nav_grades"
+        android:icon="@drawable/ic_grade"
+        android:title="Notes" />
+    <item android:id="@+id/nav_absences"
+        android:icon="@drawable/ic_absence"
+        android:title="Absences" />
+    <item android:id="@+id/nav_more"
+        android:icon="@drawable/ic_more"
+        android:title="Plus" />
+</menu>

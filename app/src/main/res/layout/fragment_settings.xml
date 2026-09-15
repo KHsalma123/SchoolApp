@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="44dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paramètres"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- User profile card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Avatar icône rond -->
+                    <FrameLayout
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginEnd="14dp">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_circle_primary" />
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_profile"
+                            app:tint="@color/white"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent Martin"
+                            android:textColor="@color/text_primary"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins_semibold" />
+
+                        <TextView
+                            android:id="@+id/tv_user_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="parent@email.com"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_marginTop="2dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent"
+                            android:textColor="@color/primary_light"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Children selector -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="MES ENFANTS" android:textColor="@color/text_tertiary"
+                android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.08" android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_children"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginBottom="20dp" />
+
+            <!-- Theme -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="THÈME" android:textColor="@color/text_tertiary"
+                android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.08" android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                android:layout_marginBottom="20dp">
+                <RadioGroup android:id="@+id/rg_theme"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="8dp">
+
+                    <RadioButton android:id="@+id/rb_light"
+                        android:layout_width="match_parent" android:layout_height="50dp"
+                        android:text="☀️  Clair" android:fontFamily="@font/poppins_regular"
+                        android:textSize="14sp" android:paddingStart="16dp"
+                        android:textColor="@color/text_primary" android:checked="true" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginStart="16dp" />
+
+                    <RadioButton android:id="@+id/rb_dark"
+                        android:layout_width="match_parent" android:layout_height="50dp"
+                        android:text="🌙  Sombre" android:fontFamily="@font/poppins_regular"
+                        android:textSize="14sp" android:paddingStart="16dp"
+                        android:textColor="@color/text_primary" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginStart="16dp" />
+
+                    <RadioButton android:id="@+id/rb_system"
+                        android:layout_width="match_parent" android:layout_height="50dp"
+                        android:text="⚙️  Système" android:fontFamily="@font/poppins_regular"
+                        android:textSize="14sp" android:paddingStart="16dp"
+                        android:textColor="@color/text_primary" />
+                </RadioGroup>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Notifications -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="NOTIFICATIONS" android:textColor="@color/text_tertiary"
+                android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.08" android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Grades notif -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:paddingStart="16dp" android:paddingEnd="16dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Nouvelles notes" android:textColor="@color/text_primary"
+                                android:textSize="14sp" android:fontFamily="@font/poppins_medium" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Alerte dès qu'une note est publiée"
+                                android:textColor="@color/text_tertiary" android:textSize="11sp" />
+                        </LinearLayout>
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switch_notif_grades"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginStart="16dp" />
+
+                    <!-- Absences notif -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:paddingStart="16dp" android:paddingEnd="16dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Absences &amp; retards" android:textColor="@color/text_primary"
+                                android:textSize="14sp" android:fontFamily="@font/poppins_medium" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Notification immédiate"
+                                android:textColor="@color/text_tertiary" android:textSize="11sp" />
+                        </LinearLayout>
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switch_notif_absences"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginStart="16dp" />
+
+                    <!-- Messages notif -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:paddingStart="16dp" android:paddingEnd="16dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Nouveaux messages" android:textColor="@color/text_primary"
+                                android:textSize="14sp" android:fontFamily="@font/poppins_medium" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Enseignants et administration"
+                                android:textColor="@color/text_tertiary" android:textSize="11sp" />
+                        </LinearLayout>
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switch_notif_messages"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quick access -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ACCÈS RAPIDE" android:textColor="@color/text_tertiary"
+                android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.08" android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_map"
+                    style="@style/Widget.SchoolApp.Button.Outlined"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="Carte école"
+                    app:icon="@drawable/ic_directions" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_documents"
+                    style="@style/Widget.SchoolApp.Button.Outlined"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Documents"
+                    app:icon="@drawable/ic_document" />
+            </LinearLayout>
+
+            <!-- Version -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="SchoolApp v1.0 • Suivi scolaire connecté"
+                android:textColor="@color/text_tertiary" android:textSize="11sp"
+                android:fontFamily="@font/poppins_regular" android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Logout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="Se déconnecter"
+                android:textColor="@color/danger"
+                android:fontFamily="@font/poppins_semibold"
+                app:backgroundTint="@color/danger_light"
+                app:cornerRadius="16dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- (Optionnel) Espace pour ne pas coller à la barre navigation -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

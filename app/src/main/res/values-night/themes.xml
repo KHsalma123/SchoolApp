@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SchoolApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_variant</item>
+        <item name="colorOnSecondary">@color/text_on_accent</item>
+        <item name="android:colorBackground">#0F1117</item>
+        <item name="colorSurface">#1A1D2E</item>
+        <item name="colorOnSurface">#E8EAF6</item>
+        <item name="colorError">@color/danger</item>
+        <item name="android:windowBackground">#0F1117</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">#1A1D2E</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#E8EAF6</item>
+    </style>
+
+    <style name="Theme.SchoolApp.Splash" parent="Theme.SchoolApp">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+    </style>
+
+</resources>

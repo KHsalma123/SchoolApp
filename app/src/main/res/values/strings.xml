@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SchoolApp</string>
+    <string name="google_maps_key">AIzaSyBqtBb0rciPtWmJwObO0t0XX1HN69EoCUM</string>
+
+    <!-- Auth -->
+    <string name="login_title">Bienvenue</string>
+    <string name="login_subtitle">Connectez-vous à SchoolApp</string>
+    <string name="email_hint">Adresse email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="role_parent">Parent</string>
+    <string name="role_student">Élève</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_schedule">Emploi du temps</string>
+    <string name="nav_grades">Notes</string>
+    <string name="nav_absences">Absences</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_more">Plus</string>
+
+    <!-- Home -->
+    <string name="home_greeting_morning">Bonjour,</string>
+    <string name="home_greeting_afternoon">Bon après-midi,</string>
+    <string name="home_greeting_evening">Bonsoir,</string>
+    <string name="next_class">Prochain cours</string>
+    <string name="recent_grades">Notes récentes</string>
+    <string name="alerts">Alertes</string>
+    <string name="see_all">Voir tout</string>
+
+    <!-- Schedule -->
+    <string name="schedule_title">Emploi du temps</string>
+    <string name="no_class">Pas de cours</string>
+    <string name="class_room">Salle</string>
+    <string name="class_teacher">Professeur</string>
+
+    <!-- Grades -->
+    <string name="grades_title">Notes &amp; Bulletins</string>
+    <string name="average">Moyenne</string>
+    <string name="class_average">Moy. classe</string>
+    <string name="coefficient">Coefficient</string>
+    <string name="out_of_20">/ 20</string>
+    <string name="trimester">Trimestre</string>
+    <string name="scan_bulletin">Scanner bulletin</string>
+
+    <!-- Absences -->
+    <string name="absences_title">Absences &amp; Retards</string>
+    <string name="absence_justified">Justifiée</string>
+    <string name="absence_unjustified">Non justifiée</string>
+    <string name="absence_late">Retard</string>
+    <string name="total_absences">Total absences</string>
+    <string name="total_late">Total retards</string>
+    <string name="justify_absence">Justifier</string>
+
+    <!-- Messages -->
+    <string name="messages_title">Messages</string>
+    <string name="send_sms">Envoyer SMS</string>
+    <string name="new_message">Nouveau message</string>
+    <string name="message_hint">Écrire un message…</string>
+    <string name="send">Envoyer</string>
+    <string name="call_teacher">Appeler</string>
+
+    <!-- Map -->
+    <string name="map_title">Carte &amp; Sorties</string>
+    <string name="school_location">Établissement</string>
+    <string name="field_trips">Sorties scolaires</string>
+    <string name="get_directions">Itinéraire</string>
+
+    <!-- Documents -->
+    <string name="documents_title">Documents</string>
+    <string name="take_photo">Prendre une photo</string>
+    <string name="gallery">Galerie</string>
+    <string name="document_name_hint">Nom du document</string>
+    <string name="save_document">Enregistrer</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="select_child">Choisir un enfant</string>
+    <string name="theme_mode">Thème</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_grades">Nouvelles notes</string>
+    <string name="notifications_absences">Absences</string>
+    <string name="notifications_messages">Nouveaux messages</string>
+    <string name="language">Langue</string>
+    <string name="logout">Déconnexion</string>
+
+    <!-- Errors -->
+    <string name="error_network">Erreur de connexion</string>
+    <string name="error_generic">Une erreur s\'est produite</string>
+    <string name="no_data">Aucune donnée disponible</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_grades">Nouvelles notes</string>
+    <string name="notif_channel_absences">Absences</string>
+    <string name="notif_channel_messages">Messages</string>
+    <string name="notif_new_grade">Nouvelle note reçue</string>
+    <string name="notif_absence">Absence signalée</string>
+    <string name="notif_message">Nouveau message</string>
+
+    <!-- Days -->
+    <string-array name="days_short">
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+    </string-array>
+</resources>
