@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SchoolApp</string>
-    <string name="google_maps_key">AIzaSyBqtBb0rciPtWmJwObO0t0XX1HN69EoCUM</string>
+    <string name="google_maps_key">clé_api</string>
 
     <!-- Auth -->
     <string name="login_title">Bienvenue</string>
